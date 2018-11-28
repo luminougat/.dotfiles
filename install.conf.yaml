@@ -13,6 +13,8 @@
 - link:
         ~/.tmux.conf: tmux.conf
         ~/.tmux/plugins/tpm: tpm
+        ~/.config/base16-shell: base16-shell
+        ~/.bashrc: bashrc
 
 
 
