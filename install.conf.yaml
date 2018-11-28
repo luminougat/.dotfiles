@@ -15,6 +15,4 @@
         ~/.tmux/plugins/tpm: tpm
         ~/.config/base16-shell: base16-shell
         ~/.bashrc: bashrc
-
-
-
+        ~/.bash_aliases: bash_aliases

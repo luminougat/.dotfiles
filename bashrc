@@ -67,23 +67,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
-fi
-
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-#alias l='ls -CF'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -105,7 +88,17 @@ if ! shopt -oq posix; then
 fi
 
 # Base16 Shell (https://github.com/chriskempson/base16-shell)
+# --> base16_monokai
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
 	eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+
+# set PATH to include script folder in home dir
+if [ -d "$HOME/scripts" ] ; then
+	PATH="$HOME/scripts:$PATH"
+fi
+
+# cd without cd
+shopt -s autocd
 
