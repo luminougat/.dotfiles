@@ -9,7 +9,8 @@
         - [git pull --recurse-submodules, Pulling submodules]
         - [git submodule update --recursive, Activate newest submodules]
         - [mkdir -p ~/.tmux/plugins, Add tmux plugin directory]
-        - [mkdir -p ~/.config/nvim, Add nvim directory]
+        - [mkdir -p ~/.config/nvim, Add nvim config directory]
+        - [mkdir -p ~/.config/i3, Add i3 config directory]
 
 - link:
         ~/.tmux.conf: tmux.conf
@@ -18,3 +19,5 @@
         ~/.bashrc: bashrc
         ~/.bash_aliases: bash_aliases
         ~/.config/nvim/init.vim: nvimrc
+        ~/.config/i3/config: i3
+        ~/.config/i3/scripts: i3-helpers
