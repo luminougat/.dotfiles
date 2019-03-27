@@ -102,3 +102,8 @@ fi
 # cd without cd
 shopt -s autocd
 
+# Set default editor
+export EDITOR=nvim
+
+# Tmuxinator
+source ~/.bin/tmuxinator.bash
