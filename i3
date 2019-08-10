@@ -189,29 +189,30 @@ exec --no-startup-id nm-applet
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-	#bindsym l exec --no-startup-id i3lock --ignore-empty-password --color=0b4c5f, mode "default"
-	bindsym l exec --no-startup-id $HOME/.i3/scripts/i3exit lock, mode "default"
-	bindsym e exec --no-startup-id $HOME/.i3/scripts/i3exit logout, mode "default"
-	bindsym s exec --no-startup-id $HOME/.i3/scripts/i3exit suspend, mode "default"
-    bindsym h exec --no-startup-id $HOME/.i3/scripts/i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id $HOME/.i3/scripts/i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id $HOME/.i3/scripts/i3exit shutdown, mode "default"
+	bindsym l exec --no-startup-id $HOME/.config/i3/scripts/i3exit lock, mode "default"
+	bindsym e exec --no-startup-id $HOME/.config/i3/scripts/i3exit logout, mode "default"
+	bindsym s exec --no-startup-id $HOME/.config/i3/scripts/i3exit suspend, mode "default"
+	bindsym h exec --no-startup-id $HOME/.config/i3/scripts/i3exit hibernate, mode "default"
+	bindsym r exec --no-startup-id $HOME/.config/i3/scripts/i3exit reboot, mode "default"
+	bindsym Shift+s exec --no-startup-id $HOME/.config/i3/scripts/i3exit shutdown, mode "default"
 
 	# back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
 }
 bindsym $mod+p mode "$mode_system"
 
 
 set $mode_monitor Monitor (h) home, (w) work, (r) reset
 mode "$mode_monitor" {
-	bindsym h exec --no-startup-id $HOME/.i3/scripts/home-2-monitors.sh, mode "default"
-	bindsym w exec --no-startup-id $HOME/.i3/scripts/work-3-monitors.sh, mode "default"
-	bindsym r exec --no-startup-id $HOME/.i3/scripts/reset.sh, mode "default"
+	bindsym h exec --no-startup-id $HOME/.config/i3/scripts/home-3-monitors.sh, mode "default"
+	bindsym w exec --no-startup-id $HOME/.config/i3/scripts/work-3-monitors.sh, mode "default"
+	bindsym r exec --no-startup-id $HOME/.config/i3/scripts/reset.sh, mode "default"
 
 	# back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
 }
 bindsym $mod+m mode "$mode_monitor"
+exec --no-startup-id feh --bg-fill /home/ms/Pictures/wallpaper.jpg
+bindsym $mod+n exec flameshot gui
