@@ -107,3 +107,8 @@ export EDITOR=nvim
 
 # Tmuxinator
 source ~/.bin/tmuxinator.bash
+
+# Cheats
+export CHEAT_USER_DIR='~/.cheats'
+export CHEAT_COLORS=true
+export CHEAT_COLORSCHEME=dark
