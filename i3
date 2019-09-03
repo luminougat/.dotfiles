@@ -214,5 +214,5 @@ mode "$mode_monitor" {
 	bindsym Escape mode "default"
 }
 bindsym $mod+m mode "$mode_monitor"
-exec --no-startup-id feh --bg-fill /home/ms/Pictures/wallpaper.jpg
 bindsym $mod+n exec flameshot gui
+exec --no-startup-id feh --bg-fill ~/wallpapers/wallpaper.jpg
