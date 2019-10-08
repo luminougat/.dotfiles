@@ -15,5 +15,6 @@ alias mci='mvn clean install'
 alias mcis='mvn clean install -DskipTests'
 
 # Use neovim instead of vim
-#alias vim='nvim'
+alias vim='nvim'
 
+alias tar='tar --numeric-owner'
