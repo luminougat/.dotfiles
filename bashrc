@@ -95,8 +95,13 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 
 # set PATH to include script folder in home dir
-if [ -d "$HOME/scripts" ] ; then
+if [ -d "$HOME/scripts" ]; then
 	PATH="$HOME/scripts:$PATH"
+fi
+
+# set PATH to include .local/bin folder in home dir
+if [ -d "$HOME/.local/bin" ]; then
+	PATH="$HOME/.local/bin:$PATH"
 fi
 
 # cd without cd
