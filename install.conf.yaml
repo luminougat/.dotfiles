@@ -11,6 +11,7 @@
         - [mkdir -p ~/.tmux/plugins, Add tmux plugin directory]
         - [mkdir -p ~/.config/nvim, Add nvim config directory]
         - [mkdir -p ~/.config/i3, Add i3 config directory]
+        - [mkdir -p ~/.config/cheat, Add cheat config directory]
         - [mkdir -p ~/.bin, Add bin directory]
 
 - link:
@@ -22,4 +23,5 @@
         ~/.config/nvim/init.vim: nvimrc
         ~/.config/i3/config: i3
         ~/.config/i3/scripts: i3-helpers
+        ~/.config/cheat/conf.yml: cheat.yml
         ~/.bin/tmuxinator.bash: tmuxinator/completion/tmuxinator.bash
