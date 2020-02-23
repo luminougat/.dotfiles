@@ -23,5 +23,5 @@
         ~/.config/nvim/init.vim: nvimrc
         ~/.config/i3/config: i3
         ~/.config/i3/scripts: i3-helpers
-        ~/.config/cheat/conf.yml: cheat.yml
+        ~/.config/cheat/conf.yml: ~/.cheats/conf.yml
         ~/.bin/tmuxinator.bash: tmuxinator/completion/tmuxinator.bash
